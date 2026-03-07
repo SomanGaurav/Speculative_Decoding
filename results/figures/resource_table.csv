@@ -1,0 +1,5 @@
+variant,peak_vram_gb,peak_ram_gb
+adaptive_high,3.621608448,0.446676992
+adaptive_low,3.618797568,0.46227456
+baseline,1.419257856,0.818159616
+fixed_k,3.622288896,0.447660032

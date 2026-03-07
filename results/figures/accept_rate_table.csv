@@ -1,0 +1,4 @@
+variant,mean_accepted_tokens,mean_entropy
+adaptive_high,4.0,2.7870226416281914
+adaptive_low,4.444444444444445,2.6747386271879807
+fixed_k,4.0,2.3429243515686737

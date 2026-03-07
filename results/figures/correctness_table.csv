@@ -1,0 +1,5 @@
+variant,accuracy
+adaptive_high,0.1111111111111111
+adaptive_low,0.0
+baseline,0.0
+fixed_k,0.1111111111111111

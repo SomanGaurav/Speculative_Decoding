@@ -1,0 +1,28 @@
+# Kept deliberately small: each AirLLM forward call takes ~10-13s on this hardware
+# (measured directly, see README), so even a handful of examples per dataset at
+# max_new_tokens=8-16 takes several minutes per run.
+datasets:
+  mmlu:
+    subset: "abstract_algebra"   # a single MMLU config; HF dataset id: cais/mmlu
+    num_examples: 3
+  gsm8k:
+    num_examples: 3
+  triviaqa:
+    num_examples: 3
+
+max_new_tokens: 12
+
+# swept as an ablation by scripts/03_run_speculative.py: one full run per variant
+speculative_variants:
+  - name: adaptive_low
+    mode: entropy_threshold
+    entropy_threshold: 1.0
+    max_k: 6
+  - name: adaptive_high
+    mode: entropy_threshold
+    entropy_threshold: 3.0
+    max_k: 6
+  - name: fixed_k
+    mode: fixed_k
+    entropy_threshold: null
+    max_k: 6

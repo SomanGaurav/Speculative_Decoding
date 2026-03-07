@@ -1,0 +1,10 @@
+.venv/
+.claude/
+__pycache__/
+*.pyc
+results/raw/*.jsonl
+logs/*.log
+*.pt
+*.safetensors
+.cache/
+models/

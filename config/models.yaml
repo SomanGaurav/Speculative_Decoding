@@ -1,0 +1,10 @@
+draft:
+  model_id: Qwen/Qwen2.5-3B
+  quant_bits: 4          # 4 or 8 (bitsandbytes)
+  compute_dtype: float16
+  device: cuda:0
+
+target:
+  model_id: Qwen/Qwen2.5-7B
+  airllm_compression: 4bit   # null | "4bit" | "8bit"
+  layer_cache_dir: null      # AirLLM default (~/.cache) unless overridden

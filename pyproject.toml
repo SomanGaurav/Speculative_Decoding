@@ -1,0 +1,26 @@
+[project]
+name = "specdec"
+version = "0.1.0"
+description = "Token-level speculative decoding with an AirLLM-streamed 8B target on 4GB VRAM"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "torch>=2.3",
+    "transformers>=4.44",
+    "accelerate>=0.33",
+    "bitsandbytes>=0.43",
+    "airllm>=2.11",
+    "datasets>=2.20",
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "psutil",
+    "matplotlib",
+    "pytest",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,4 +1,4 @@
-# Speculative Decoding on 4GB VRAM
+# Speculative Decoding
 
 Token-level speculative decoding where a small draft model (Qwen2.5-3B, 4-bit)
 proposes tokens that a much larger target model (Qwen2.5-7B, streamed via AirLLM)
